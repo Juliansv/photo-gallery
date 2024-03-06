@@ -13,8 +13,11 @@ const NavLinks = () => {
       <Link href={`/`} className="hover:text-slate-400">
         Gallery
       </Link>
-      <Link href={`/`} className="hover:text-slate-400">
+      <Link href={`/about`} className="hover:text-slate-400">
         About
+      </Link>
+      <Link href={`/contact`} className="hover:text-slate-400">
+        Contact
       </Link>
     </>
   );

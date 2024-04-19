@@ -29,8 +29,6 @@ interface Collection {
 export default async function Home() {
   const collections: Collection[] = await getCollections();
 
-  console.log(collections);
-
   const defaultAvatar =
     "//png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg";
 
@@ -43,7 +41,7 @@ export default async function Home() {
               pathname: `/${collection.fields.title}`,
               query: {
                 id: collection.sys.id,
-              }
+              },
             }}
             key={collection.sys.id}
             className="relative hover:text-slate-300"
@@ -73,7 +71,7 @@ export default async function Home() {
                   pathname: `/${collection.fields.title}`,
                   query: {
                     id: collection.sys.id,
-                  }
+                  },
                 }}
                 className="relative flex h-full transition-all duration-300 ease-in-out hover:scale-105 hover:text-slate-300"
               >

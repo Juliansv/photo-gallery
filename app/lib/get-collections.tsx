@@ -6,12 +6,22 @@ const client = createClient({
 });
 
 // Retrieve the list of collections from Contentful
-const getCollectionsNew = async () => {
+export const getCollections = async () => {
   const response = await client.getEntries({
     content_type: "collection",
+    select: [
+      "sys.id",
+      "fields.title",
+      "fields.description",
+      "fields.coverPhoto",
+    ],
   });
 
   return response.items;
 };
 
-export default getCollectionsNew;
+export const getCollection = async (id: string) => {
+  const response = await client.getEntry(id);
+
+  return response.fields;
+};

@@ -1,6 +1,6 @@
 ## Photo gallery 
 
-This is a simple and responsive photo gallery that displays images, build for an Argentinian photographer. The gallery is responsive and will adjust the number of columns based on the screen size. Is connected to CONTENTFUL CMS to manage the images and the text. Communication with the CMS is done through the Contentful API.
+This is a simple and responsive photo gallery that displays images. The gallery is responsive and will adjust the number of columns based on the screen size. Is connected to CONTENTFUL CMS to manage the images and the text. Communication with the CMS is done through the Contentful API.
 
 ## Technologies
 - Next.js
